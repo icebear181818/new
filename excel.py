@@ -22,7 +22,7 @@ def main():
         if "," in i:
             i = i.split(',')[0]
             tem2.append(i)
-        elif i.endswith(('Corp.','limitation')):
+        elif i.endswith(('Corp.','limitation','INC','INC.','Inc.','LLC','LIMITED','Ltd','Corporation','Company','CORPORATION','Inc.','L.L.C','LTD','COMPANY','L.P','CO.','Co-op.','Limited')):
             i = i.split()[0]
             tem2.append(i)
         else:
